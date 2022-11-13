@@ -14,7 +14,6 @@ export class PingCommand extends Command {
    }
 
    public messageRun(message: Message) {
-      console.log("hmmmmm");
       return message.channel.send(
          `Pong! \`${this.container.client.ws.ping}ms\``
       );
